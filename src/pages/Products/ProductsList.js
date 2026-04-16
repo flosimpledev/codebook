@@ -20,7 +20,7 @@ export const ProductsList = () => {
     async function fetchProducts(){
       try{
         const data = await getProductList(searchTerm);
-        initialProductList(data);
+        initialProductList(data); 
       } catch(error){
         toast.error(error.message, {closeButton: true, position: "bottom-center" });
       }
